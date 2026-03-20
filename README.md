@@ -32,8 +32,18 @@ Gmail API
 ## 폴더 구조
 ```
 Capstone_ai/
+├── api/                         
+│   ├── __init__.py
+│   ├── main.py                   ← FastAPI 앱 진입점
+│   ├── schemas.py                ← Request/Response 모델
+│   └── routers/
+│       ├── __init__.py
+│       ├── classify.py           ← /classify (inference.py 연동)
+│       ├── summarize.py          ← /summarize (GPT)
+│       └── draft.py              ← /draft (Claude)
 ├── notebooks/
 │   └── project.ipynb       # 전체 파이프라인 실행 노트북
+│
 ├── src/
 │   ├── config.py           # 경로 및 하이퍼파라미터 설정
 │   ├── data_utils.py       # 데이터 로드 / Pair 생성
