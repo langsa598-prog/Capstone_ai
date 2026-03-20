@@ -1,7 +1,7 @@
 # 데이터
-data/dataset.csv
-data/contrastive_pairs.csv
-data/*.npy
+data/
+*.gsheet
+!data/.gitkeep
 
 # 모델
 models/
@@ -23,38 +23,8 @@ __pycache__/
 *.pyo
 .DS_Store
 ```
+# 환경변수 (API 키)
+.env
 
----
-
-## 올릴 최종 구조
-```
-Capstone_ai/
-├── notebooks/
-│   └── project.ipynb
-│
-├── src/
-│   ├── config.py
-│   ├── data_utils.py
-│   ├── train_sbert.py
-│   ├── train_domain.py
-│   ├── train_intent.py
-│   ├── evaluation.py
-│   └── inference.py
-│
-├── data/
-│   └── .gitkeep              ← 폴더 구조 유지용 빈 파일
-│
-├── models/
-│   └── .gitkeep
-│
-├── outputs/
-│   ├── figures/
-│   │   └── .gitkeep
-│   ├── reports/
-│   │   └── .gitkeep
-│   └── logs/
-│       └── .gitkeep
-│
-├── .gitignore
-├── requirements.txt
-└── README.md
+# FastAPI 캐시
+api/__pycache__/

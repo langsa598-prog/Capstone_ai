@@ -1,3 +1,8 @@
+# ============================================================
+# Capstone_AI2 requirements.txt
+# ============================================================
+ 
+# 기존
 sentence-transformers==2.7.0
 scikit-learn==1.4.2
 pandas==2.2.2
@@ -6,3 +11,10 @@ seaborn==0.13.2
 matplotlib==3.8.4
 torch==2.3.0
 joblib==1.4.2
+ 
+# 새로 추가 (FastAPI + LLM API)
+fastapi
+uvicorn[standard]
+openai
+anthropic
+python-dotenv
