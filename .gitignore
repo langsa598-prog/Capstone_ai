@@ -2,6 +2,7 @@
 data/
 *.gsheet
 !data/.gitkeep
+reference_data/
 
 # 모델
 models/
